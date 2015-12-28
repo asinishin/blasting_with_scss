@@ -1,0 +1,121 @@
+@import "mixins/burger";
+@import 'colors';
+
+#page-head {
+  // padding: 24px 0;
+  background-color: #fff;
+  // border-bottom: 30px solid #0e55a5;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  .navbar-toggle {
+    float: none;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    @media (min-width: 768px) {
+      display: none;
+    }
+    &[aria-expanded="true"] {
+      .navbar-hamburger {
+        @include burger-to-cross(3px, 5px);
+      }
+    }
+    .navbar-hamburger {
+      @include burger(25px, 3px, 5px, #444);
+    }
+  }
+  #enrollment-navigation li:first-child {
+    a {
+      border-bottom: none;
+      color: #fff;
+      margin-top: 8px;
+    }
+    &:hover {
+      border-bottom: 2px solid transparent;
+    }
+  }
+  #engagement-navigation li:last-child {
+    span {
+      font-weight: normal;
+      text-transform: none;
+    }
+    &:hover {
+      border-bottom: 2px solid transparent;
+    }
+  }
+  nav {
+    height: 100%;
+    ul {
+      overflow: auto;
+      padding: 0;
+      li {
+        border-bottom: 2px solid transparent;
+        float: right;
+        list-style: outside none none;
+        margin-left: 45px;
+        padding: 0 0 1px;
+        line-height: normal;
+        &.active {
+          border-bottom: 2px solid $color-blue;
+        }
+        &:hover {
+          border-bottom: 2px solid $color-blue;
+        }
+        &:first-child {
+        }
+        &:last-child {
+          margin-left: 0;
+        }
+        span {
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.42857;
+          margin-top: 6px;
+          padding-top: 6px;
+          text-decoration: none;
+          text-transform: uppercase;
+          vertical-align: middle;
+          white-space: nowrap;
+        }
+        a {
+          color: $color-blue;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.42857;
+          margin-top: 10px;
+          padding-top: 6px;
+          text-decoration: none;
+          text-transform: uppercase;
+          vertical-align: middle;
+          white-space: nowrap;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ceep-nav-table {
+    display: table;
+    margin: 0 !important;
+    width: 100%;
+    > div {
+      display: table-cell;
+      float: none;
+      vertical-align: middle;
+    }
+  }
+}
+.ceep-nav-table > div {
+  position: relative;
+}
+#tenant-logo {
+  margin: 20px 0;
+}

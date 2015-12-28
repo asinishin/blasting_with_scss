@@ -1,0 +1,91 @@
+en:
+  general:
+    dollar: $
+    nil: nil
+    n/a: N/A
+    close: Close
+    cancel: Cancel
+    continue: Continue
+    done: Done
+    title: Portland General Electric
+    copyright: Copyright &copy; 2015 Portland General Electric
+  pluralize:
+    crunch_count: "There is %{count} ongoing demand response event(s)."
+    crunch_count_none: "Energy crunches"
+    crunch_count_plural: "There are %{count} upcoming energy crunches."
+  navigation:
+    dashboard: Dashboard
+    flex_plan: My Flex Plan
+    usage: My Usage
+    rewards: My Rewards
+  dashboard:
+    usage:
+      my_energy_usage:
+        heading: "My Energy Usage"
+    flex_plan:
+      main_block_title: Flex your rate and save
+      main_block_desc_tip: Save money on your electricity
+      main_block_desc: Get rebates and save money by shifting your energy use to non-peak (less-expensive) hours. With Flex price, you'll exactly when electricity charges are lower. Plus, by reducing energy usage during Flex events you'll receive a rebate of up to 90$ per season. Nice.
+      savings_tip: What you could save!
+      bill_price_head: Your bill is
+      bill_price_tail: here's how much Flex can help you save
+      minor_changes_title: Make minor changes
+      minor_changes_body: Your estimated savings with Flex if you shift 5% of your usage to less expensive times, and reduce your energy usage by 10% during Flex events
+      major_changes_title: Make major changes
+      major_changes_body: Your estimated savings with Flex if you shift 10% of your usage to less expensive times, and reduce your energy usage by 20% during Flex events
+      price_per_year: "%{price}/yr."
+      enroll_button: 'Enroll in Flex'
+      how_price_works_title: How Flex price works
+      how_price_works_body: Instead of the standard rate where electricity costs do not vary, the Flex price rate has varying costs by time of day, and day of week. The cost for electricity is higher during periods of peak demand and lower during periods of moderate to low demand.
+      how_events_work_title: How Flex events work
+      how_events_work_body: During some of hottest and coldest days of the year, PGE will call a “Flex event” and send you an email or text message (based on your preference), letting you know of the upcoming Flex event and asking you to take extra measures to reduce your energy usage during that time. Flex events last 2-6 hours, and there will never be more than 10 Flex events in a single winter or summer season.
+      disclamer: "*DISCLAIMER TEXT: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    callouts:
+      positive:
+        default_heading: Wow!
+        default_body: You did a great job in the last energy crunch!
+      negative:
+        default_heading: Darn!
+        default_body: Try to do better next time!
+      no_data: 'No results currently available for this event'
+  enrollment:
+    no_enrollment: You are not enrolled to any program yet. Please, contact your Utility.
+  flex_plan:
+    terms_and_conditions:
+      title: Terms and Conditions
+      body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      accept_terms: I have read and agree to these terms and conditions
+    enrollment_progress:
+      in_progress: Enrollment in progress
+      succesful: Enrollment succesful
+      unsuccesful: Enrollment unsuccesful
+      instructions: Follow these two steps and click on Done to begin exploring the Flex Energy Portal
+      step_for_settings: Go to Settings to enable text notifications for Flex alerts
+      step_for_dashboard: Go to the Dashboard to review energy saving tips
+  devise:
+    auth:
+      activation: Activation Code
+      authentication_method: Authentication Method
+      email: E-mail
+      phone_number: Phone Number
+      password: Password
+      password_confirmation: Password Confirmation
+      account_identifier: Account Identifier
+      policy: "By creating an account, you agree to %{tenant}'s privacy policy."
+      help_text:
+        authentication_method: Please select an an authentication method.
+        email_new: Please provide an e-mail address to associate with this account.
+        email_old: Please provide the e-mail address associated with this account.
+        phone_number: Please enter the phone number associated with this account.
+        password: Please provide a password for this account.
+        password_confirmation: Enter the password again to confirm.
+  helper:
+    label:
+      settings:
+        email_notification: ''
+  activerecord:
+    exceptions:
+      tenant_encryption_not_found: "Couldn't find TenantEncryption record for tenant_id=%{tenant_id}"
+  admin:
+    callout_form:
+      needs_messages: 'This event needs callout messages'

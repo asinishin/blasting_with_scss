@@ -1,0 +1,54 @@
+@import "colors";
+
+.css-checkbox {
+  cursor: pointer;
+  input {
+    opacity: 0;
+  }
+  span {
+    position: relative;
+    display: inline-block;
+    margin-left: -30px;
+    margin-right: 12px;
+    vertical-align: top;
+    width: 16px; height: 16px;
+    border-radius: 2px;
+    border: 2px solid $color-page-text;
+    &:before {
+      //content: "\2713"; /* comment content to use custom icon classes */
+      position: absolute;
+      top: 0; left: 0;  right: 0; bottom: 0;
+      opacity: 0;
+      text-align: center;
+      font-size: 10px;
+      line-height: 10px;
+      font-weight: 800;
+      vertical-align: middle;
+      color: $color-page-text;
+    }
+  }
+  input[type=checkbox] {
+    &:checked {
+      + span {
+        border-color: $color-page-text;
+        background-color: $color-white;
+        &:before {
+          color: $color-page-text;
+          opacity: 1;
+          transition: color 0.3s ease-out;
+        }
+      }
+    }
+    &:disabled {
+      + span {
+        border-color: #ddd !important;
+        background-color: #ddd !important;
+      }
+    }
+  }
+  &:hover {
+    span {
+      border-color: $color-page-text;
+    }
+  }
+}

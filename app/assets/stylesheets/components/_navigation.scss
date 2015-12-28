@@ -1,0 +1,37 @@
+@import "colors";
+
+nav#app-tabs {
+  background-color: $color-blue;
+  ul {
+    margin: 0 auto;
+    padding: 0 30px;
+    li {
+      list-style-type: none;
+      padding: 0;
+      a {
+        color: $color-white;
+        font-weight: 400;
+        font-size: 16px;
+        display: inline-block;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+        &:hover {
+          background-color: $color-blue-light;
+        }
+        &.current {
+          background-color: $color-grey-medium;
+          color: $color-blue;
+        }
+      }
+      &.domain-name {
+        text-align: right;
+        padding: 10px 5px 0;
+        color: $color-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Blasting",
+  "version": "0.0.0",
+  "authors": [
+    "Alex Sinishin <sinshin@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "None",
+  "homepage": "https://github.com/asinishin",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

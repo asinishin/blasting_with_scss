@@ -1,0 +1,64 @@
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+/public/assets/*
+
+## Environment normalisation:
+/.bundle
+/vendor/bundle
+
+# these should all be checked in to normalise the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# IDEs, editors and OS
+.idea
+tags
+.buildpath
+.project
+*.komodoproject
+*.swp
+*.swo
+.DS_Store
+dump.rdb
+db/*.sqlite3
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+.ruby-gemset
+
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+# bower.json
+
+# Ignore pow environment settings
+.powenv
+
+
+# Private configuration
+encryption_keys/*
+/config/deployment_keys.yml
+/config/deployment_keys.*.yml
+/config/passwords.yml
+/config/database.yml
+/config/shards.yml
+/config/settings.local.yml
+/config/settings/*.local.yml
+/config/settings/passwords.*.yml
+/config/environments/*.local.yml
+/config/nginx.conf
+/config/unicorn.rb
+/config/initializers/secret_token.rb
+/config/aws.yml
+/config/newrelic.yml
+

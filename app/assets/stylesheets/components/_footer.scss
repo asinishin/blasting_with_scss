@@ -1,0 +1,70 @@
+@import "colors";
+
+footer {
+  background: #000;
+  font-size: 14px;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer p {
+  margin-bottom: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+footer ul {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer .cwus {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer .connect-us li a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+footer .connect-us li a:hover {
+  text-decoration: none;
+  color: #999;
+}
+
+/*footer .connect-us li a .icon-twitter:hover {
+  color: #00aced;
+}
+
+footer .connect-us li a .icon-facebook2:hover {
+  color: #3b5998;
+}
+
+footer .connect-us li a .icon-google-plus:hover {
+  color: #dd4b39;
+}
+
+footer .connect-us li a .icon-mail:hover {
+  color: #4077AF;
+}*/
+
+//footer .foo-nav {
+//  text-align: right;
+//}
+
+footer .foo-nav ul li a {
+  color: $color-grey-medium;
+  margin-right: 10px;
+  font-weight: 200;
+  //text-decoration: underline;
+}

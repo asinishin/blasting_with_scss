@@ -1,0 +1,10 @@
+.table {
+  display: table;
+  height: 100%;
+  .table__cell {
+    display: table-cell;
+    &.table__cell--vmiddle {
+      vertical-align: middle;
+    }
+  }
+}

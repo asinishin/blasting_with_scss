@@ -1,0 +1,12 @@
+%html
+  %head
+    %title RocketBuss
+    = stylesheet_link_tag 'application'
+  %body
+    = render 'layouts/header'
+
+    = yield
+
+    = render 'layouts/footer'
+
+    = javascript_include_tag 'application'

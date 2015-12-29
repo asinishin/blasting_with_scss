@@ -1,2 +1,35 @@
 / Navigation bar
-%div.b_1
+%div.navbar.navbar-fixed-top
+  %div.container{role: 'navigation'}
+    %div.navbar-header
+      %a.navbar-brand{href: '/'}
+        Blasting Off With Bootstrap
+      %button.navbar-toggle.collapsed{type: 'button', 'data-toggle' => 'collapse', 'data-target' => '.navbar-collapse'}
+    %ul.nav.navbar-nav.navbar-right.collapse.navbar-collapse
+      %li
+        %a{href: '#'}
+          Tickets
+      %li
+        %a{href: '#'}
+          Stations
+      %li.dropdown
+        %a.dropdown-toggle{href: '/about', 'data-target' => '#', 'data-toggle' => 'dropdown'}
+          About
+          %span.caret
+        %ul.dropdown-menu{role: 'menu'}
+          %li
+            %a{href: '#'}
+              Our Story
+          %li
+            %a{href: '#'}
+              Contact Us
+          %li.divider
+          %li
+            %a{href: 'blog.html.haml'} Blog
+          %li.divider
+          %li
+            %a{href: '#'}
+              Twitter
+          %li
+            %a{href: '#'}
+              Facebook

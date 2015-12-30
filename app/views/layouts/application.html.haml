@@ -8,11 +8,12 @@
     = favicon_link_tag 'favicon.ico'
     = stylesheet_link_tag 'application'
   %body
-    = render 'layouts/header'
+    .wrapper
+      = render 'layouts/header'
 
-    %div.container.main-content
-      = yield
-
+      %div.container.main-content
+        = yield
+      .push
     = render 'layouts/footer'
 
     = javascript_include_tag 'application'

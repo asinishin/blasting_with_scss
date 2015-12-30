@@ -77,7 +77,6 @@
   padding-top: 30px;
   padding-bottom: 30px;
   color: rgb(239,239,239);
-  height: 400px;
 }
 
 /* Blog */
@@ -93,4 +92,33 @@
 
 .blog-content {
   margin-top: 65px;
+}
+
+/* Blah */
+
+* {
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+html, body {
+  @media (min-width: 768px) {
+    height: 100%;
+  }
+}
+
+.wrapper {
+  @media (min-width: 768px) {
+    min-height: 100%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+  }
+}
+
+.footer, .push {
+    @media (min-width: 768px) {
+    height: 200px; /* .push must be the same height as .footer */
+  }
 }
